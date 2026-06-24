@@ -1,0 +1,329 @@
+
+
+
+/* Configurações Gerais */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    color: #2c3e50;
+    background-color: #f9fcf8;
+}
+
+/* Menu de Navegação */
+header {
+    background-color: #2e7d32; /* Verde Orgânico */
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav a {
+    color: #e8f5e9;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+nav a.active, nav a:hover {
+    color: #fff;
+    border-bottom: 2px solid #81c784;
+}
+
+/* Conteúdo da Página Sobre */
+.container-sobre {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.propósito h1 {
+    color: #1b5e20;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.subtitulo {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.texto-missao p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+/* Grid de Pilares */
+.pilares {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.pilar-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border-top: 4px solid #81c784;
+}
+
+.pilar-card h3 {
+    margin-top: 0;
+    color: #2e7d32;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    margin-top: 60px;
+    font-size: 0.9rem;
+}
+/* Configurações Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --verde-escuro: #2C5E3B;
+    --verde-folha: #4CAF50;
+    --marrom-terra: #5D4037;
+    --amarelo-sol: #FBC02D;
+    --fundo-claro: #F9F9F6;
+    --branco: #FFFFFF;
+    --texto-escuro: #333333;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--fundo-claro);
+    color: var(--texto-escuro);
+    line-height: 1.6;
+}
+
+h1, h2, h3, .logo {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Menu de Navegação */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: var(--branco);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--verde-escuro);
+}
+
+.navbar .logo span {
+    color: var(--verde-folha);
+}
+
+.navbar .menu {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .menu a {
+    text-decoration: none;
+    color: var(--marrom-terra);
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.navbar .menu a:hover {
+    color: var(--verde-folha);
+}
+
+/* Seção Hero */
+.hero {
+    background: linear-gradient(rgba(44, 94, 59, 0.78), rgba(93, 64, 55, 0.78)), url('https://unsplash.com') no-repeat center center/cover;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--branco);
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+    max-width: 750px;
+    margin: 0 auto 30px auto;
+    font-weight: 400;
+}
+
+.btn-hero {
+    display: inline-block;
+    background-color: var(--amarelo-sol);
+    color: var(--marrom-terra);
+    padding: 12px 35px;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 30px;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.btn-hero:hover {
+    transform: scale(1.05);
+    background-color: #f9a825;
+}
+
+/* Seção Sobre / Importância */
+.about {
+    padding: 80px 0;
+    text-align: center;
+    background-color: var(--branco);
+}
+
+.about h2 {
+    font-size: 2.2rem;
+    color: var(--verde-escuro);
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.about h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: var(--amarelo-sol);
+    margin: 10px auto 0 auto;
+    border-radius: 2px;
+}
+
+.about p {
+    font-size: 1.1rem;
+    max-width: 850px;
+    margin: 0 auto;
+    color: #555;
+}
+
+/* Seção de Cards */
+.cards-section {
+    padding: 80px 0;
+    background-color: var(--fundo-claro);
+    text-align: center;
+}
+
+.cards-section h2 {
+    font-size: 2.2rem;
+    color: var(--marrom-terra);
+    margin-bottom: 40px;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card {
+    background-color: var(--branco);
+    flex: 1 1 300px;
+    max-width: 350px;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border-bottom: 5px solid var(--verde-folha);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 1.4rem;
+    color: var(--verde-escuro);
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 0.95rem;
+    color: #666;
+}
+
+/* Rodapé */
+.footer {
+    background-color: var(--marrom-terra);
+    color: var(--fundo-claro);
+    text-align: center;
+    padding: 25px 20px;
+    font-size: 1rem;
+}
+
+.footer strong {
+    color: var(--amarelo-sol);
+    text-transform: capitalize;
+}
+
+/* Responsividade (Telas menores) */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+    
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+    }
+    
+    .about h2, .cards-section h2 {
+        font-size: 1.6rem;
+    }
+}
